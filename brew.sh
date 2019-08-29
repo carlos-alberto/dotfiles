@@ -33,9 +33,6 @@ chsh -s /bin/zsh
 # Install `wget` with IRI support.
 brew install wget --with-iri
 
-# Install GnuPG to enable PGP-signing commits.
-brew install gnupg
-
 # Install more recent versions of some macOS tools.
 brew install vim
 brew install grep
