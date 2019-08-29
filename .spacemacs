@@ -301,6 +301,20 @@ executes.
  This function is mostly useful for variables that need to be set
 before packages are loaded. If you are unsure, you should try in setting them in
 `dotspacemacs/user-config' first."
+  ; Disable Alt-[0-9], since my keyboard kinda needs Alt-3 for the hash key.
+  (define-key winum-keymap "\M-0" nil)
+  (define-key winum-keymap "\M-1" nil)
+  (define-key winum-keymap "\M-2" nil)
+  (define-key winum-keymap "\M-3" nil)
+  (define-key winum-keymap "\M-4" nil)
+  (define-key winum-keymap "\M-5" nil)
+  (define-key winum-keymap "\M-6" nil)
+  (define-key winum-keymap "\M-7" nil)
+  (define-key winum-keymap "\M-8" nil)
+  (define-key winum-keymap "\M-9" nil)
+
+  ; Actually allow typing #
+  (global-set-key (kbd "M-3") (lambda () (interactive) (insert "#")))
   )
 
 (defun dotspacemacs/user-config ()

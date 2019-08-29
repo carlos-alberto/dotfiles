@@ -51,7 +51,7 @@ ZSH_THEME="awesomepanda"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git gpg-agent)
+plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -90,17 +90,17 @@ ulimit -n 10000
 eval "$(pyenv init --no-rehash - zsh)"
 pyenv virtualenvwrapper
 
+# eval $(gpg-agent --daemon)
+# GPG_TTY=$(tty)
+# export GPG_TTY
+# if [ -f "${HOME}/.gpg-agent-info" ]; then
+#    . "${HOME}/.gpg-agent-info"
+#    export GPG_AGENT_INFO
+#    export SSH_AUTH_SOCK
+# fi
+
 # The next line updates PATH for the Google Cloud SDK.
-# if [ -f '/Users/carlhenderson/Downloads/google-cloud-sdk/path.zsh.inc' ]; then source '/Users/carlhenderson/Downloads/google-cloud-sdk/path.zsh.inc'; fi
+if [ -f '/Users/carlhenderson/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/carlhenderson/google-cloud-sdk/path.zsh.inc'; fi
 
-# # The next line enables shell command completion for gcloud.
-# if [ -f '/Users/carlhenderson/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then source '/Users/carlhenderson/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
-
-eval $(gpg-agent --daemon)
-GPG_TTY=$(tty)
-export GPG_TTY
-if [ -f "${HOME}/.gpg-agent-info" ]; then
-   . "${HOME}/.gpg-agent-info"
-   export GPG_AGENT_INFO
-   export SSH_AUTH_SOCK
-fi
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/carlhenderson/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/carlhenderson/google-cloud-sdk/completion.zsh.inc'; fi
