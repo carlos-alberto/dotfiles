@@ -87,8 +87,6 @@ alias gpub='git push -u origin $(current_branch)'
 
 ulimit -n 10000
 
-. $HOME/.asdf/asdf.sh
-. $HOME/.asdf/completions/asdf.bash
 eval "$(pyenv init --no-rehash - zsh)"
 pyenv virtualenvwrapper
 
