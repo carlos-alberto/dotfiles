@@ -26,11 +26,9 @@ brew install gnu-sed --with-default-names
 brew install bash
 brew install bash-completion2
 
-# Switch to using brew-installed bash as default shell
-if ! fgrep -q "${BREW_PREFIX}/bin/bash" /etc/shells; then
-  echo "${BREW_PREFIX}/bin/bash" | sudo tee -a /etc/shells;
-  chsh -s "${BREW_PREFIX}/bin/bash";
-fi;
+# Install zsh
+brew install zsh zsh-completions
+chsh -s /bin/zsh
 
 # Install `wget` with IRI support.
 brew install wget --with-iri
@@ -43,7 +41,6 @@ brew install vim --with-override-system-vi
 brew install grep
 brew install openssh
 brew install screen
-brew install php
 brew install gmp
 
 # Install font tools.
@@ -52,34 +49,9 @@ brew install sfnt2woff
 brew install sfnt2woff-zopfli
 brew install woff2
 
-# Install some CTF tools; see https://github.com/ctfs/write-ups.
-brew install aircrack-ng
-brew install bfg
-brew install binutils
-brew install binwalk
-brew install cifer
-brew install dex2jar
-brew install dns2tcp
-brew install fcrackzip
-brew install foremost
-brew install hashpump
-brew install hydra
-brew install john
-brew install knock
-brew install netpbm
-brew install nmap
-brew install pngcheck
-brew install socat
-brew install sqlmap
-brew install tcpflow
-brew install tcpreplay
-brew install tcptrace
-brew install ucspi-tcp # `tcpserver` etc.
-brew install xpdf
-brew install xz
-
 # Install other useful binaries.
 brew install ack
+
 #brew install exiv2
 brew install git
 brew install git-lfs
@@ -96,6 +68,33 @@ brew install ssh-copy-id
 brew install tree
 brew install vbindiff
 brew install zopfli
+
+# Install my programs
+# Firefox
+brew cask install firefox
+# Spacemacs
+brew tap d12frosted/emacs-plus
+brew install emacs-plus
+brew linkapps emacs-plus
+git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
+# Slack
+brew cask install slack
+# Docker
+brew cask install docker
+# Dropbox
+brew cask install dropbox
+# Franz
+brew cask install franz
+# Chrome
+brew cask install chrome
+# Iterm
+brew cask install iterm2
+# Spotify
+brew cask install spotify
+# Spectacle
+brew cask install spectacle
+# VLC
+brew cask install vlc
 
 # Remove outdated versions from the cellar.
 brew cleanup
