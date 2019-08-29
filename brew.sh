@@ -37,7 +37,7 @@ brew install wget --with-iri
 brew install gnupg
 
 # Install more recent versions of some macOS tools.
-brew install vim --with-override-system-vi
+brew install vim
 brew install grep
 brew install openssh
 brew install screen
@@ -56,7 +56,7 @@ brew install ack
 brew install git
 brew install git-lfs
 brew install gs
-brew install imagemagick --with-webp
+brew install imagemagick 
 brew install lua
 brew install lynx
 brew install p7zip
@@ -86,7 +86,7 @@ brew cask install dropbox
 # Franz
 brew cask install franz
 # Chrome
-brew cask install chrome
+brew cask install google-chrome
 # Iterm
 brew cask install iterm2
 # Spotify
