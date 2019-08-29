@@ -93,5 +93,22 @@ brew cask install spectacle
 # VLC
 brew cask install vlc
 
+
+# RP SPECIFIC
+brew install jpeg           # libjpeg needed for pillow
+brew install wget           # needed for some development tasks
+brew install nasm           # to compile binary dependencies of mozjpeg & optipng (required by webpack-image-loader)
+brew install pkg-config     # needed for mozjpeg build
+brew install entr           # needed for restarting some of our processes in `paver watch`
+brew install libpqxx        # installs psql, which is useful for postgres work
+brew install mercurial      # needed to pip install some deps from mercurial repos.
+
+# A selection of build tools required by asdf.
+brew install coreutils automake autoconf openssl libyaml readline libxslt libtool unixodbc
+
+brew install pyenv pyenv-virtualenvwrapper
+
+brew install asdf
+
 # Remove outdated versions from the cellar.
 brew cleanup

@@ -87,10 +87,10 @@ alias gpub='git push -u origin $(current_branch)'
 
 ulimit -n 10000
 
-# . $HOME/.asdf/asdf.sh
-# . $HOME/.asdf/completions/asdf.bash
-# eval "$(pyenv init --no-rehash - zsh)"
-# pyenv virtualenvwrapper
+. $HOME/.asdf/asdf.sh
+. $HOME/.asdf/completions/asdf.bash
+eval "$(pyenv init --no-rehash - zsh)"
+pyenv virtualenvwrapper
 
 # The next line updates PATH for the Google Cloud SDK.
 # if [ -f '/Users/carlhenderson/Downloads/google-cloud-sdk/path.zsh.inc' ]; then source '/Users/carlhenderson/Downloads/google-cloud-sdk/path.zsh.inc'; fi
