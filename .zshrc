@@ -84,6 +84,7 @@ source $ZSH/oh-my-zsh.sh
 alias gs="git stash"
 alias gsp="git stash pop"
 alias gpub='git push -u origin $(current_branch)'
+alias gfix='git commit --amend --no-edit'
 
 ulimit -n 10000
 
