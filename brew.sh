@@ -110,5 +110,7 @@ brew install pyenv pyenv-virtualenvwrapper
 
 brew install asdf
 
+brew cask install java
+
 # Remove outdated versions from the cellar.
 brew cleanup
