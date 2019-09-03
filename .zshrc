@@ -91,15 +91,6 @@ ulimit -n 10000
 eval "$(pyenv init --no-rehash - zsh)"
 pyenv virtualenvwrapper
 
-# eval $(gpg-agent --daemon)
-# GPG_TTY=$(tty)
-# export GPG_TTY
-# if [ -f "${HOME}/.gpg-agent-info" ]; then
-#    . "${HOME}/.gpg-agent-info"
-#    export GPG_AGENT_INFO
-#    export SSH_AUTH_SOCK
-# fi
-
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/carlhenderson/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/carlhenderson/google-cloud-sdk/path.zsh.inc'; fi
 
