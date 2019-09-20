@@ -96,3 +96,7 @@ if [ -f '/Users/carlhenderson/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/c
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/carlhenderson/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/carlhenderson/google-cloud-sdk/completion.zsh.inc'; fi
+
+# use zsh autocomplete
+source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=green,bg=white"

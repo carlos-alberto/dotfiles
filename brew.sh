@@ -92,6 +92,8 @@ brew cask install spotify
 brew cask install spectacle
 # VLC
 brew cask install vlc
+# autocomplete for zsh
+brew install zsh-autosuggestions
 
 
 # RP SPECIFIC
