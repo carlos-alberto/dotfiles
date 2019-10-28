@@ -66,6 +66,11 @@ brew install tree
 brew install vbindiff
 brew install zopfli
 
+# Install some handy tools
+brew install bat
+brew install mdcat
+
+
 # Install my programs
 # Firefox
 brew cask install firefox
