@@ -1,3 +1,4 @@
+killall gpg-agent;
 eval $(gpg-agent --daemon)
 GPG_TTY=$(tty)
 export GPG_TTY

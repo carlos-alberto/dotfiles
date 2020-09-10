@@ -53,7 +53,7 @@ brew install ack
 brew install git
 brew install git-lfs
 brew install gs
-brew install imagemagick 
+brew install imagemagick
 brew install lua
 brew install lynx
 brew install p7zip
@@ -69,7 +69,7 @@ brew install zopfli
 # Install some handy tools
 brew install bat
 brew install mdcat
-
+brew install colordiff
 
 # Install my programs
 # Firefox
@@ -99,16 +99,17 @@ brew cask install spectacle
 brew cask install vlc
 # autocomplete for zsh
 brew install zsh-autosuggestions
-
+# VSCode
+brew cask install visual-studio-code
 
 # RP SPECIFIC
-brew install jpeg           # libjpeg needed for pillow
-brew install wget           # needed for some development tasks
-brew install nasm           # to compile binary dependencies of mozjpeg & optipng (required by webpack-image-loader)
-brew install pkg-config     # needed for mozjpeg build
-brew install entr           # needed for restarting some of our processes in `paver watch`
-brew install libpqxx        # installs psql, which is useful for postgres work
-brew install mercurial      # needed to pip install some deps from mercurial repos.
+brew install jpeg       # libjpeg needed for pillow
+brew install wget       # needed for some development tasks
+brew install nasm       # to compile binary dependencies of mozjpeg & optipng (required by webpack-image-loader)
+brew install pkg-config # needed for mozjpeg build
+brew install entr       # needed for restarting some of our processes in `paver watch`
+brew install libpqxx    # installs psql, which is useful for postgres work
+brew install mercurial  # needed to pip install some deps from mercurial repos.
 
 # A selection of build tools required by asdf.
 brew install coreutils automake autoconf openssl libyaml readline libxslt libtool unixodbc
