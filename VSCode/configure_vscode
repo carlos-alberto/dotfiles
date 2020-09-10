@@ -1,0 +1,32 @@
+#!/usr/bin/env bash
+
+# Symlink the settings/keybindings
+ln -s /Users/carlhenderson/projects/dotfiles/VSCode/settings.json /Users/carlhenderson/Library/Application\ Support/Code/User/settings.json
+ln -s /Users/carlhenderson/projects/dotfiles/VSCode/keybindings.json /Users/carlhenderson/Library/Application\ Support/Code/User/keybindings.json
+
+# Install extensions
+code --install-extension bodil.file-browser
+code --install-extension dbaeumer.vscode-eslint
+code --install-extension dhedgecock.radical-vscode
+code --install-extension Equinusocio.vsc-community-material-theme
+code --install-extension Equinusocio.vsc-material-theme
+code --install-extension equinusocio.vsc-material-theme-icons
+code --install-extension esbenp.prettier-vscode
+code --install-extension foxundermoon.shell-format
+code --install-extension freakypie.code-python-isort
+code --install-extension jacobdufault.fuzzy-search
+code --install-extension kahole.magit
+code --install-extension misogi.ruby-rubocop
+code --install-extension ms-azuretools.vscode-docker
+code --install-extension ms-mssql.mssql
+code --install-extension ms-python.python
+code --install-extension p1c2u.jenkins
+code --install-extension PKief.material-icon-theme
+code --install-extension rebornix.ruby
+code --install-extension travisthieman.better-search
+code --install-extension vayan.haml
+code --install-extension vscodevim.vim
+code --install-extension VSpaceCode.vspacecode
+code --install-extension VSpaceCode.whichkey
+code --install-extension wingrunr21.vscode-ruby
+code --install-extension zhuangtongfa.material-theme

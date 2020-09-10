@@ -1,0 +1,62 @@
+{
+	"editor.formatOnSave": true,
+	"editor.codeActionsOnSave": {
+		// "source.organizeImports": true
+	},
+	"ruby.format": "rubocop",
+	"ruby.rubocop.onSave": true,
+	"[javascriptreact]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[jsonc]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[ruby]": {
+		"editor.defaultFormatter": "misogi.ruby-rubocop"
+	},
+	"files.associations": {
+		"*.erb": "erb",
+		"*.html.erb": "erb",
+		"Dockerfile-dev": "dockerfile"
+	},
+	"vim.easymotion": true,
+	"vim.normalModeKeyBindingsNonRecursive": [
+		{
+			"before": [" "],
+			"commands": ["vspacecode.space"]
+		},
+		{
+			"before": [" "],
+			"commands": ["vspacecode.space"]
+		},
+		{
+			"before": ["<space>"],
+			"commands": ["vspacecode.space"]
+		}
+	],
+	"vim.visualModeKeyBindingsNonRecursive": [
+		{
+			"before": [" "],
+			"commands": ["vspacecode.space"]
+		},
+		{
+			"before": [" "],
+			"commands": ["vspacecode.space"]
+		},
+		{
+			"before": ["<space>"],
+			"commands": ["vspacecode.space"]
+		}
+	],
+	"workbench.colorTheme": "Community Material Theme Darker High Contrast",
+	"[dockerfile]": {
+		"editor.defaultFormatter": "ms-azuretools.vscode-docker"
+	},
+	"[python]": {},
+	"workbench.activityBar.visible": true,
+	"[html]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"ruby.rubocop.executePath": "/usr/local/bin/",
+	"workbench.iconTheme": "eq-material-theme-icons-darker"
+}
